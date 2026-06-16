@@ -1,0 +1,33 @@
+/* Altura fija para controlar la visualización de imágenes remotas en el carrusel */
+.carousel-inner-item {
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Efecto Hover Avanzado en Tarjetas de Contenido (Animaciones CSS) */
+.custom-card {
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15) !important;
+    border-color: #0d6efd;
+}
+
+/* Animación Nativa de Carga Suave para Texto Principal */
+.fade-in-text {
+    animation: fadeInUp 1.2s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,53 @@
+body{
+    background:#f8f9fa;
+}
+
+.sombra{
+    transition:0.5s;
+}
+
+.sombra:hover{
+    transform:translateY(-8px);
+    box-shadow:0px 5px 15px rgba(0,0,0,0.3);
+}
+
+.carousel-item img{
+    object-fit:cover;
+}
+
+footer{
+    margin-top:50px;
+}
+
+.galeria-img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    transition:0.5s;
+    cursor:pointer;
+}
+
+.galeria-img:hover{
+    transform:scale(1.08);
+    box-shadow:0px 5px 15px rgba(0,0,0,0.4);
+}
+.galeria-img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    transition:0.5s;
+    cursor:pointer;
+}
+
+.galeria-img:hover{
+    transform:scale(1.08);
+    box-shadow:0px 5px 15px rgba(0,0,0,0.4);
+}
+
+/* ESTILOS PARA HOMOGENEIZAR LAS IMÁGENES */
+.img-cuadrada {
+    width: 100%;             
+    height: 250px;         
+    object-fit: cover;       
+    object-position: center; 
+}

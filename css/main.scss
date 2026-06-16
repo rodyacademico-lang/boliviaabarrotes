@@ -1,0 +1,38 @@
+// Variables globales de Sass (Exigencia del examen)
+$primary-color: #0d6efd;
+$dark-color: #212529;
+$transition-smooth: cubic-bezier(0.25, 0.8, 0.25, 1);
+
+/* Control de imágenes locales para apertura directa en Windows */
+.img-carrusel {
+  height: 65vh;
+  object-fit: cover; 
+  background-color: $dark-color;
+}
+
+/* Animaciones nativas CSS3 */
+.fade-in-text {
+  animation: fadeInUp 1s $transition-smooth forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efectos Hover personalizados en Tarjetas (Cards) */
+.custom-card {
+  transition: transform 0.3s $transition-smooth, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+    border-color: $primary-color;
+  }
+}
